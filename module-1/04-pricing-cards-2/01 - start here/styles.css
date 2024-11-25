@@ -11,18 +11,29 @@ h1 {
   margin-bottom: 0;
 }
 
-.text-accent {
-  color: #00a1ab;
-}
-
 .fs-500 {
   font-size: 1.3125rem;
   margin-top: 0;
 }
 
+.text-accent {
+  color: #00a1ab;
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #00a1ab;
+  color: #FFF;
+}
+
 .plans {
   display: flex;
   justify-content: center;
+  margin-block-end: 2.25rem;
 }
 
 .plan {
@@ -30,16 +41,6 @@ h1 {
   padding: 2em;
   border-radius: 1em;
   margin: 0 0.5em;
-}
-
-.plan--light {
-  color: #4e4e4e;
-  background: linear-gradient(-45deg, #e5e3e8, #fafafa);
-}
-
-.plan--accent {
-  color: #fff;
-  background: linear-gradient(-45deg, #00a1ab, #3741a0);
 }
 
 .plan__title {
@@ -54,6 +55,34 @@ h1 {
   margin: 0;
 }
 
+.plan--light {
+  color: #4e4e4e;
+  background: linear-gradient(-45deg, #e5e3e8, #fafafa);
+}
+
+.plan--light > .plan__price {
+  color: #00a1ab;
+}
+
+.plan--light > .button {
+  color: #FFF;
+  background: #4e4e4e;
+}
+
+.plan--accent {
+  color: #fff;
+  background: linear-gradient(-45deg, #00a1ab, #3741a0);
+}
+
+.plan--accent > .plan__price {
+  color: #FFF;
+}
+
+.plan--accent > .button {
+  background: #FFF;
+  color: #4e4e4e;
+}
+
 .plan__price span {
   display: block;
   font-size: 1.5625rem;
@@ -63,22 +92,4 @@ h1 {
 .plan__description {
   margin: 2em 0;
   line-height: 1.5;
-}
-
-.button {
-  text-decoration: none;
-  padding: 0.5em 0.75em;
-  border-radius: 0.25em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.button--light {
-  background: white;
-  color: #4e4e4e;
-}
-
-.button--dark {
-  color: white;
-  background: #4e4e4e;
 }

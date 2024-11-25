@@ -4,8 +4,52 @@
     font-family: 'PT Serif', serif;
 */
 
+* {
+  margin-block-end: 0;
+}
+
+body {
+  color: #414141;
+  font-family: "PT Serif", serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+a {
+  color: #ca5e10;
+}
+
+header {
+  --oneside-padding: 1.5rem;
+  margin-inline: auto;
+  max-width: min(100% - var(--oneside-padding) * 2, 85ch);
+  text-align: center;
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.subtitle {
+  color: #7d7d7d;
+  font-size: 2.25rem;
+  line-height: 1.25;
+  margin-block-start: 1.25rem;
+}
+
 .container {
-  width: 90%;
-  max-width: 39rem;
-  margin: 0 auto;
+  --oneside-padding: 1.25rem;
+  margin-inline: auto;
+  max-width: min(100% - var(--oneside-padding) * 2, 65ch);
+  text-wrap: balance;
+  padding-block-end: 6rem;
+}
+
+.lead {
+  font-size: 1.3125rem;
+  margin-block-start: 6rem;
 }
