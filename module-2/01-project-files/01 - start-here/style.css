@@ -1,3 +1,76 @@
 /* Font used
 font-family: 'PT Sans', sans-serif; 
 */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-base: "PT Sans", sans-serif;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --clr-dark: #171717;
+  --clr-white: #fff;
+  --clr-accent: #59e89c;
+
+  --fs-sm: 1.125rem;
+  --fs-md: 1.25rem;
+  --fs-lg: 2.25rem;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  font-family: var(--ff-base);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-400);
+  color: var(--clr-dark);
+}
+
+.btn {
+  appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  background-color: var(--clr-accent);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-width: 0;
+  padding: 0.75em 2em;
+}
+
+.container {
+  max-width: 65ch;
+}
+
+.hero {
+  background-image: url("/module-2/01-project-files/01\ -\ start-here/assets/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-inline: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80svh;
+}
+
+.hero > .container {
+  background-color: var(--clr-white);
+  padding: 1.5em 3em;
+}
+
+.hero .title {
+  margin-block-start: 0;
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-400);
+}
+
+.hero .title > span {
+  font-weight: var(--fw-700);
+}
